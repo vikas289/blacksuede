@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding:0 ;
+}
+
+.dis{
+    width:400px;
+}
+.extra{
+    margin: 50px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s;
+    transform: translate(0px,0px);
+}
+
+.extra:hover{
+    box-shadow: none;
+    transform: translate(-5px,-5px);
+}
+
+@media screen and (max-width: 767px){
+    .one{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dis{
+        width: 100%;
+        height: auto;
+        
+    }
+
+    .extra{
+        margin: 50px 0px;
+    }
+    
+}

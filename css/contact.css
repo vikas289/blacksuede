@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: black;
+}
+
+nav img {
+    width: 180px;
+    height: 100px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+/* Style inputs */
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=number] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.containerv {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.columnv {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+.columnv img {
+    height: 696px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.textv {
+    position: absolute;
+    width: 90%;
+    margin: 100px auto;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.textv h1 {
+    font-size: 50px;
+}
+
+.textv p {
+    font-size: 30px;
+}
+
+.columnv {
+    position: relative;
+}
+
+/* Clear floats after the columns */
+.rowv:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+hr{
+    margin: 0px;
+}
+
+
+.list-unstyled li a{
+    color: black;
+}
+
+.list-unstyled li a:hover{
+    color: red;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 767px) {
+
+    .columnv,
+    input[type=submit] {
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+    }
+
+    .columnv {
+
+        padding: 30px 0px;
+    }
+
+    .columnv img {
+        height: 530px;
+    }
+
+    nav img {
+        width: 150px;
+        height: 80px;
+    }
+
+    .textv h1 {
+        font-size: 35px;
+    }
+
+    .textv p {
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+
+}

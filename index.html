@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Blacksuede</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap"
+      rel="stylesheet"
+    />
+   
+    <link rel="stylesheet" type="text/css" href="css/lightslider.css"/>
+    <script type="text/javascript" src="js/JQuery3.3.1.js"></script>
+    <script type="text/javascript" src="js/lightslider.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="loader">
+      <svg>
+          <circle id="s8" class="sMove t" cx="45" cy="50" r="45" fill="#020205"/>
+          <polygon id="s7" class="sMove t" points="45,05 16,16 1,42 6,73 30,92 60,92 84,73 89,42 74,16" fill="#230B09"/>
+          <polygon id="s6" class="sMove t" points="45,04 12,17 0,50 12,83 45,96 78,83 90,50 78,17" fill="#46130C"/>
+          <polygon id="s5" class="sMove t" points="45,04 9,22 1,60 25,92 65,92 89,60 81,22" fill="#631B0E"/>
+          <polygon id="s4" class="sMove t" points="45,03 4,26 4,74 45,97 86,74 86,26" fill="#812211"/>
+          <polygon id="s3" class="sMove t" points="45,03 1,35 18,88 72,88 89,35" fill="#992813"/>
+          <rect id="s2" class="sMove t" x="10" y="15" width="70" height="70" fill="#BD3116"/>
+          <polygon id="s1" class="sMove t" points="45,05 2,80 88,80" fill="#E43A19"/>
+      </svg>
+      <h1>LOADING</h1>
+  </div>
+
+
+    <a class="whatsapp" title="chat with us!" href="https://wa.me/+918652290454/?text=Hello Muzammil, is this deal still available" target="_blank"> <img src="images/whatsapp.png"></img> </a> 
+
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+      <img src="images/logo.jpg" alt="logo" />
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
+      >
+        <div class="icon" onclick="myFunction(this)">
+          <div class="icon-create1"></div>
+          <div class="icon-create2"></div>
+          <div class="icon-create3"></div>
+        </div>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="collapsibleNavbar"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link mx-3" href="#"
+              ><i class="fa fa-home" aria-hidden="true"></i> &nbsp;Home</a
+            >
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="about.html"
+              ><i class="fa fa-users" aria-hidden="true"></i> &nbsp;About Us</a
+            >
+          </li>
+          <!-- <li class="nav-item mx-3">
+                    <a class="nav-link" href="#products"><i class="fa fa-briefcase" aria-hidden="true"></i> &nbsp;Products</a>
+                </li> -->
+          <li class="nav-item dropdown mx-3">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <i class="fa fa-briefcase" aria-hidden="true"></i> &nbsp;Products
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="catlog.html">catlog1</a>
+              <a class="dropdown-item" href="#">catlog2</a>
+              <!-- <div class="dropdown-divider"></div> -->
+              <a class="dropdown-item" href="#">catlog3</a>
+              <a class="dropdown-item" href="#">catlog4</a>
+              <a class="dropdown-item" href="#">catlog5</a>
+              <a class="dropdown-item" href="#">catlog6</a>
+            </div>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="contact.html"
+              ><i class="fa fa-phone" aria-hidden="true"></i> &nbsp;Contact
+              Us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid color c">
+      <h1>
+        <a
+          href=""
+          class="typewrite"
+          data-period="2000"
+          data-type='[ "Hi, Im Muzammil.", "I am Creative.", "I Love Design.", "I Love to Develop." ]'
+        >
+          <span class="wrap"></span>
+        </a>
+      </h1>
+    </div>
+
+    <div class="container-fluid">
+      <img
+        class="mySlides animate__animated animate__bounceInLeft three"
+        src="images/bag.jpg"
+      />
+      <img
+        class="mySlides animate__animated animate__zoomIn three"
+        src="images/bag1.jpg"
+      />
+      <img
+        class="mySlides animate__animated animate__lightSpeedInRight three"
+        src="images/leather1.webp"
+      />
+
+      <!-- <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button> -->
+    </div>
+
+    <h2 id="products" class="head space">Our Products</h2>
+
+    <div class="container-fluid d-flex my-4 two space justify-content-center">
+      <div
+        class="card card1 space2 animate-test element-to-hide"
+        style="visibility: visible"
+      >
+        <img class="card-img-top" src="images/jacket.jpg" alt="Card image" />
+        <div class="card-body">
+          <h4 class="card-title">John Doe</h4>
+          <p class="card-text">
+            Some example text some example text. John Doe is an architect and
+            engineer
+          </p>
+          <a href="#" class="btn btn-primary">View Products</a>
+        </div>
+      </div>
+      <div
+        class="card card1 space2 animate-test element-to-hide"
+        style="visibility: visible"
+      >
+        <img class="card-img-top" src="images/purse.jpg" alt="Card image" />
+        <div class="card-body">
+          <h4 class="card-title">John Doe</h4>
+          <p class="card-text">
+            Some example text some example text. John Doe is an architect and
+            engineer
+          </p>
+          <a href="#" class="btn btn-primary">View Products </a>
+        </div>
+      </div>
+      <div
+        class="card card1 space2 animate-test element-to-hide"
+        style="visibility: visible"
+      >
+        <img class="card-img-top" src="images/gloves.jpeg" alt="Card image" />
+        <div class="card-body">
+          <h4 class="card-title">John Doe</h4>
+          <p class="card-text">
+            Some example text some example text. John Doe is an architect and
+            engineer
+          </p>
+          <a href="#" class="btn btn-primary"> View Products</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid d-flex space two justify-content-center">
+      <div
+        class="card card1 space2 animate-test element-to-hide"
+        style="visibility: visible"
+      >
+        <img class="card-img-top" src="images/other1.jpg" alt="Card image" />
+        <div class="card-body">
+          <h4 class="card-title">John Doe</h4>
+          <p class="card-text">
+            Some example text some example text. John Doe is an architect and
+            engineer
+          </p>
+          <a href="#" class="btn btn-primary">View Products </a>
+        </div>
+      </div>
+      <div
+        class="card card1 space2 animate-test element-to-hide"
+        style="visibility: visible"
+      >
+        <img class="card-img-top" src="images/other2.jpg" alt="Card image" />
+        <div class="card-body">
+          <h4 class="card-title">John Doe</h4>
+          <p class="card-text">
+            Some example text some example text. John Doe is an architect and
+            engineer
+          </p>
+          <a href="#" class="btn btn-primary"> View Products</a>
+        </div>
+      </div>
+      <div
+        class="card card1 space2 animate-test element-to-hide"
+        style="visibility: visible"
+      >
+        <img class="card-img-top" src="images/others.png" alt="Card image" />
+        <div class="card-body">
+          <h4 class="card-title">John Doe</h4>
+          <p class="card-text">
+            Some example text some example text. John Doe is an architect and
+            engineer
+          </p>
+          <a href="#" class="btn btn-primary"> View Products</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="customize container-fluid">
+      <img src="images/leather.jpg" alt="">
+      <div class="customize-text">
+        <pre>Want to make
+customized
+ products</pre>
+        <a href="contact.html">Contact Us&nbsp;&nbsp;<i class="fa fa-chevron-right exit" aria-hidden="true"></i></a>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1 class="trends">Latest Collections</h1>
+      <ul id="autoWidth" class="cs-hidden">
+        <li class="item-a">
+          <div class="card card2">
+            <img class="card-img-top" src="images/bag1.jpg" alt="Card image" >
+            <div class="overlay"></div>
+            <div class="text"><a href="#">Shop Now <span class="right"><i class="fa fa-chevron-right" aria-hidden="true"></i></span></a></div>
+            <!-- <div class="card-body d-flex">
+              <h4 class="card-title">Leather bags</h4>
+              <h4 style="margin-left:80px ;"><i class="fa fa-inr" aria-hidden="true"></i>&nbsp;1200</h4>
+            </div> -->
+          </div>
+        </li>
+        <li class="item-a">
+          <div class="card card2">
+            <img class="card-img-top" src="images/leather1.webp" alt="Card image" >
+            <div class="overlay"></div>
+            <div class="text"><a href="#">Shop Now <span class="right"><i class="fa fa-chevron-right" aria-hidden="true"></i></span></a></div>
+            <!-- <div class="card-body d-flex">
+              <h4 class="card-title">Leather bags</h4>
+              <h4 style="margin-left:80px ;"><i class="fa fa-inr" aria-hidden="true"></i>&nbsp;1200</h4>
+            </div> -->
+          </div>
+        </li>
+        <li class="item-a">
+          <div class="card card2">
+            <img class="card-img-top" src="images/leather3.jpg" alt="Card image" >
+            <div class="overlay"></div>
+            <div class="text"><a href="#">Shop Now <span class="right"><i class="fa fa-chevron-right" aria-hidden="true"></i></span></a></div>
+            <!-- <div class="card-body d-flex">
+              <h4 class="card-title">Leather bags</h4>
+              <h4 style="margin-left:80px ;"><i class="fa fa-inr" aria-hidden="true"></i>&nbsp;1200</h4>
+            </div> -->
+          </div>
+        </li>
+        <li class="item-a">
+          <div class="card card2">
+            <img class="card-img-top" src="images/leather2.jpg" alt="Card image" >
+            <div class="overlay"></div>
+            <div class="text"><a href="#">Shop Now <span class="right"><i class="fa fa-chevron-right" aria-hidden="true"></i></span></a></div>
+            <!-- <div class="card-body d-flex">
+              <h4 class="card-title">Leather bags</h4>
+              <h4 style="margin-left:80px ;"><i class="fa fa-inr" aria-hidden="true"></i>&nbsp;1200</h4>
+            </div> -->
+          </div>
+        </li>
+        <li class="item-a">
+          <div class="card card2">
+            <img class="card-img-top" src="images/bag.jpg" alt="Card image" >
+            <div class="overlay"></div>
+            <div class="text"><a href="#">Shop Now <span class="right"><i class="fa fa-chevron-right" aria-hidden="true"></i></span></a></div>
+            <!-- <div class="card-body d-flex">
+              <h4 class="card-title">Leather bags</h4>
+              <h4 style="margin-left:80px ;"><i class="fa fa-inr" aria-hidden="true"></i>&nbsp;1200</h4>
+            </div> -->
+          </div>
+        </li>
+        <li class="item-a">
+          <div class="card card2">
+            <img class="card-img-top" src="images/purse.jpg" alt="Card image" >
+            <div class="overlay"></div>
+            <div class="text"><a href="#">Shop Now <span class="right"><i class="fa fa-chevron-right" aria-hidden="true"></i></span></a></div>
+            <!-- <div class="card-body d-flex">
+              <h4 class="card-title">Leather bags</h4>
+              <h4 style="margin-left:80px ;"><i class="fa fa-inr" aria-hidden="true"></i>&nbsp;1200</h4>
+            </div> -->
+          </div>
+        </li>
+        <li class="item-a">
+          <div class="card card2">
+            <img class="card-img-top" src="images/other2.jpg" alt="Card image" >
+            <div class="overlay"></div>
+            <div class="text"><a href="#">Shop Now <span class="right"><i class="fa fa-chevron-right" aria-hidden="true"></i></span></a></div>
+            <!-- <div class="card-body d-flex">
+              <h4 class="card-title">Leather bags</h4>
+              <h4 style="margin-left:80px ;"><i class="fa fa-inr" aria-hidden="true"></i>&nbsp;1200</h4>
+            </div> -->
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container space">
+      <h1>Happy customers</h1>
+      <div class="vikas">
+        <div class="counter">
+          <p>
+            <span class="counter-value" data-count="250">0</span>
+            <span class="plus">&#43;</span>&nbsp; Products delivered
+          </p>
+          <hr class="line" />
+        </div>
+        <div class="counter">
+          <p>
+            <span class="counter-value" data-count="250">0</span>
+            <span class="plus">&#43;</span>&nbsp; Products delivered
+          </p>
+          <hr class="line" />
+        </div>
+        <div class="counter">
+          <p>
+            <span class="counter-value" data-count="250">0</span>
+            <span class="plus">&#43;</span>&nbsp; Products delivered
+          </p>
+          <hr class="line" />
+        </div>
+      </div>
+      <div class="table-responsive d-flex space">
+        <div class="space2">
+          <!-- <h2>Card Image</h2>
+                <p>Image at the top (card-img-top):</p> -->
+          <div class="card" style="width: 320px">
+            <img
+              class="card-img-top"
+              src="images/happy.jpeg"
+              alt="Card image"
+              style="width: 100%; height: 200px"
+            />
+            <div class="card-body text-center">
+              <h4 class="card-title">John Doe</h4>
+              <p class="card-text">
+                Some example text some example text. John Doe is an architect
+                and engineer
+              </p>
+              <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="space2">
+          <!-- <h2>Card Image</h2>
+                <p>Image at the top (card-img-top):</p> -->
+          <div class="card" style="width: 320px">
+            <img
+              class="card-img-top"
+              src="images/happy1.png"
+              alt="Card image"
+              style="width: 100%; height: 200px"
+            />
+            <div class="card-body text-center">
+              <h4 class="card-title">John Doe</h4>
+              <p class="card-text">
+                Some example text some example text. John Doe is an architect
+                and engineer
+              </p>
+              <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+          </div>
+        </div>
+        <div class="space2">
+          <!-- <h2>Card Image</h2>
+                <p>Image at the top (card-img-top):</p> -->
+          <div class="card" style="width: 320px">
+            <img
+              class="card-img-top"
+              src="images/happy2.jpg"
+              alt="Card image"
+              style="width: 100%; height: 200px"
+            />
+            <div class="card-body text-center">
+              <h4 class="card-title">John Doe</h4>
+              <p class="card-text">
+                Some example text some example text. John Doe is an architect
+                and engineer
+              </p>
+              <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+          </div>
+        </div>
+        <div class="space2">
+          <!-- <h2>Card Image</h2>
+                <p>Image at the top (card-img-top):</p> -->
+          <div class="card" style="width: 320px">
+            <img
+              class="card-img-top"
+              src="images/happy3.jpg"
+              alt="Card image"
+              style="width: 100%; height: 200px"
+            />
+            <div class="card-body text-center">
+              <h4 class="card-title">John Doe</h4>
+              <p class="card-text">
+                Some example text some example text. John Doe is an architect
+                and engineer
+              </p>
+              <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+          </div>
+        </div>
+        <div class="space2">
+          <!-- <h2>Card Image</h2>
+                <p>Image at the top (card-img-top):</p> -->
+          <div class="card" style="width: 320px">
+            <img
+              class="card-img-top"
+              src="images/happy5.png"
+              alt="Card image"
+              style="width: 100%; height: 200px"
+            />
+            <div class="card-body text-center">
+              <h4 class="card-title">John Doe</h4>
+              <p class="card-text">
+                Some example text some example text. John Doe is an architect
+                and engineer
+              </p>
+              <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+          </div>
+        </div>
+        <div class="space2">
+          <!-- <h2>Card Image</h2>
+                <p>Image at the top (card-img-top):</p> -->
+          <div class="card" style="width: 320px">
+            <img
+              class="card-img-top"
+              src="images/happy4.png"
+              alt="Card image"
+              style="width: 100%; height: 200px"
+            />
+            <div class="card-body text-center">
+              <h4 class="card-title">John Doe</h4>
+              <p class="card-text">
+                Some example text some example text. John Doe is an architect
+                and engineer
+              </p>
+              <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="swipe">
+        <h3>&#8592; Swipe Left</h3>
+      </div>
+    </div>
+
+    <footer
+      class="page-footer font-small bg-white text-dark pt-4 space container-fluid"
+    >
+      <div class="container-fluid text-center text-md-left">
+        <div class="row">
+          <div class="col-md-6 mt-md-0 mt-3">
+            <h5 class="text-uppercase" id="about">About us</h5>
+            <hr class="line" />
+            <p>
+              BLACK SUEDE is an Indian company primarily committed to deliver
+              Innovation and Convenience to its customers in every aspects,
+              Therefore we are not only focused RETAIL and MASS- PRODUCTIONS,
+              but also the one thing that is extremely difficult for every
+              Brand/ Designer (ie) SAMPLING. WE HELP DESIGNER'S COVERT THEIR
+              UNIQUE DESIGNS INTO PHYSICAL BEAUTIFUL FINISHED PRODUCTS. We are
+              your one stop destination to all your leather needs spreading
+              positivity and creativity with our unique finds. We are
+              manufacturer of high quality of genuine leather goods like leather
+              handbags, Men's Leather Bags, Woman's Leather Bags, Travel Bags,
+              Leather backpack, Laptop Bags, office Bags, Messenger Bags, Hair
+              On leather Bags, Duffel Bags, Fur Bags, Leather Hand Bags & Totes,
+              clutches, ladies wallets, card holders & etc..
+            </p>
+          </div>
+          <div class="col-md-3 mb-md-0 mb-3">
+            <h5 class="text-uppercase">Quick Links</h5>
+            <hr class="line" />
+            <ul class="list-unstyled">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="about.html">About</a>
+              </li>
+              <li>
+                <a href="catlog.html">Catlogs</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-md-0 mb-3">
+            <h5 class="text-uppercase">More Links</h5>
+            <hr class="line" />
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Link 1</a>
+              </li>
+              <li>
+                <a href="#!">Link 2</a>
+              </li>
+              <li>
+                <a href="#!">Link 3</a>
+              </li>
+              <li>
+                <a href="#!">Link 4</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright text-center py-3">
+        © 2020 Copyright:
+        <a href="#"> demowebsite.com</a>
+      </div>
+    </footer>
+
+    <script src="js/script.js" type="text/javascript"></script>
+    <script>
+        function myFunction(x) {
+    x.classList.toggle("change");
+    // document.querySelector("ul").classList.toggle("active")
+  }
+
+  $(window).scroll(function () {
+    $(".animate-test").each(function () {
+      var imagePos = $(this).offset().top;
+      var topOfWindow = $(window).scrollTop();
+      if (imagePos < topOfWindow + 400) {
+        $(this).addClass("slideRight");
+      }
+    });
+  });
+  $(".element-to-hide").css("visibility", "hidden");
+
+  var TxtType = function (el, toRotate, period) {
+    this.toRotate = toRotate;
+    this.el = el;
+    this.loopNum = 0;
+    this.period = parseInt(period, 10) || 2000;
+    this.txt = "";
+    this.tick();
+    this.isDeleting = false;
+  };
+  TxtType.prototype.tick = function () {
+    var i = this.loopNum % this.toRotate.length;
+    var fullTxt = this.toRotate[i];
+
+    if (this.isDeleting) {
+      this.txt = fullTxt.substring(0, this.txt.length - 1);
+    } else {
+      this.txt = fullTxt.substring(0, this.txt.length + 1);
+    }
+
+    this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
+
+    var that = this;
+    var delta = 200 - Math.random() * 100;
+
+    if (this.isDeleting) {
+      delta /= 2;
+    }
+
+    if (!this.isDeleting && this.txt === fullTxt) {
+      delta = this.period;
+      this.isDeleting = true;
+    } else if (this.isDeleting && this.txt === "") {
+      this.isDeleting = false;
+      this.loopNum++;
+      delta = 500;
+    }
+
+    setTimeout(function () {
+      that.tick();
+    }, delta);
+  };
+
+  window.onload = function () {
+    var elements = document.getElementsByClassName("typewrite");
+    for (var i = 0; i < elements.length; i++) {
+      var toRotate = elements[i].getAttribute("data-type");
+      var period = elements[i].getAttribute("data-period");
+      if (toRotate) {
+        new TxtType(elements[i], JSON.parse(toRotate), period);
+      }
+    }
+    // INJECT CSS
+    var css = document.createElement("style");
+    css.type = "text/css";
+    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+    document.body.appendChild(css);
+  };
+
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {
+      myIndex = 1;
+    }
+    x[myIndex - 1].style.display = "block";
+    setTimeout(carousel, 5000); // Change image every 2 seconds
+  }
+
+  var a = 0;
+  $(window).scroll(function () {
+    var oTop = $(".counter").offset().top - window.innerHeight;
+    if (a == 0 && $(window).scrollTop() > oTop) {
+      $(".counter-value").each(function () {
+        var $this = $(this),
+          countTo = $this.attr("data-count");
+        $({
+          countNum: $this.text(),
+        }).animate(
+          {
+            countNum: countTo,
+          },
+
+          {
+            duration: 3000,
+            easing: "swing",
+            step: function () {
+              $this.text(Math.floor(this.countNum));
+            },
+            complete: function () {
+              $this.text(this.countNum);
+              //alert('finished');
+            },
+          }
+        );
+      });
+      a = 1;
+    }
+  });
+
+  document.onreadystatechange = function () {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                    "body").style.visibility = "hidden";
+                document.querySelector(
+                    ".loader").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                    ".loader").style.display = "none";
+                document.querySelector(
+                    "body").style.visibility = "visible";
+            }
+        };
+
+    </script>
+  </body>
+</html>
